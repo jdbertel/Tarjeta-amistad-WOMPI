@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta Amor & Amistad</title>
+  <!-- Animate.css para animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d1b2a;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 700px;
+      margin: 80px auto;
+      text-align: center;
+      animation: fadeInUp 2s;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+      margin: 15px 0;
+    }
+    .emoji {
+      font-size: 60px;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #1b263b;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #415a77;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fondo de partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Tarjeta -->
+  <div class="card animate__animated animate__zoomIn">
+    <h1>💼⚖️ Equipo Jurídico & Cumplimiento 💼⚖️</h1>
+    <p>El cumplimiento es cosa seria…<br>
+       pero su amistad hace todo más ligero. 💙</p>
+    <p><strong>¡Gracias por mantenernos siempre en regla!</strong></p>
+    <div class="emoji animate__animated animate__bounce animate__infinite">🎉✨</div>
+    <a href="https://giphy.com/gifs/party-the-office-hard-l0MYt5jPR6QX5pnqM" target="_blank" class="btn">
+      🎁 Ver Sorpresa
+    </a>
+  </div>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "color": { "value": ["#ffffff","#00aaff","#ffcc00"] },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.6 },
+        "size": { "value": 3 },
+        "line_linked": { "enable": true, "distance": 120, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": { "onhover": { "enable": true, "mode": "repulse" } }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
